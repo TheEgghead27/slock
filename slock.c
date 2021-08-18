@@ -189,7 +189,7 @@ readpw(Display *dpy, struct xrandr *rr, struct lock **locks, int nscreens,
 			if (IsKeypadKey(ksym)) {
 				if (ksym == XK_KP_Enter)
 					ksym = XK_Return;
-				else if (ksym >= XK_KP_0 && ksym <= XK_KP_9)
+				else if (ksym >= XK_KP_Multiply && ksym <= XK_KP_9)
 					ksym = (ksym - XK_KP_0) + XK_0;
 			}
 			if (IsFunctionKey(ksym) ||
